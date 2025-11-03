@@ -17,12 +17,12 @@
                 <li><a href="#inicio" onclick="closeMenu()">Início</a></li> 
                 <li><a href="#desafios" onclick="closeMenu()">Desafios</a></li>
                 <li><a href="#solucoes" onclick="closeMenu()">Soluções</a></li>
-                <li><a href="#analise" onclick="closeMenu()">Análise Gratuita</a></li>
+                <li><a href="analise.html" onclick="closeMenu()">Análise Gratuita</a></li>
                 <li><a href="#contato" onclick="closeMenu()">Contato</a></li>
                 <li><a href="sobre.html" onclick="closeMenu()">Sobre</a></li>
-                <li><a href="politica.html" onclick="closeMenu()">Política de Privacidade</a></li>
-                <li><a href="#analise" class="nav-cta" onclick="closeMenu()">Solicitar Diagnóstico</a></li>      
+                <li><a href="analise.html" class="nav-cta" onclick="closeMenu()">Solicitar Diagnóstico</a></li>      
             </ul>
+            
         </nav>
     </header>
 
@@ -227,7 +227,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="cta-section">
         <div class="cta-box">
             <h2>Pronto para transformar sua logística?</h2>
@@ -235,282 +235,6 @@
             <button class="btn-primary" onclick="document.getElementById('analise').scrollIntoView({behavior: 'smooth'})" style="font-size: 1.2rem; padding: 18px 40px;">
                 Solicitar Análise Gratuita Agora
             </button>
-        </div>
-    </section>
-
-    <section id="analise" class="quiz-section">
-        <div class="section-container">
-            <div class="section-header">
-                <div class="section-label">Diagnóstico Gratuito</div>
-                <h2 class="section-title">Questionário de Análise Logística</h2>
-                <p class="section-subtitle">Responda algumas perguntas e receba um diagnóstico inicial gratuito da sua operação.</p>
-            </div>
-            <div class="quiz-container">
-                <div style="background: rgba(255, 51, 51, 0.1); border-left: 4px solid var(--color-primary); padding: var(--space-16); border-radius: var(--radius-sm); margin-bottom: var(--space-32);">
-                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;"><strong style="color: var(--color-text);">Tempo médio:</strong> 8 a 10 minutos</p>
-                    <p style="margin: var(--space-8) 0 0 0; color: var(--color-text-light); font-size: 0.95rem;"><strong style="color: var(--color-text);">Confidencialidade:</strong> As informações são utilizadas exclusivamente para o diagnóstico da operação.</p>
-                </div>
-
-                <form id="quizForm" action="https://formsubmit.co/btmuniz72@hotmail.com" method="POST">
-
-                    <input type="hidden" name="_subject" value="🎯 Nova Análise de Diagnóstico Logístico - JGM4">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="obrigado.html">
-                    <input type="hidden" id="pontuacao_total" name="📊_PONTUACAO_TOTAL" value="">
-                    <input type="hidden" id="nivel_maturidade" name="🏆_NIVEL_MATURIDADE" value="">
-
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-24); font-size: 1.4rem;">1. Informações Gerais</h3>
-                        
-                        <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" name="Nome_Completo" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="cargo">Cargo / Função *</label>
-                            <input type="text" id="cargo" name="Cargo" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">E-mail Corporativo *</label>
-                            <input type="email" id="email" name="Email" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefone">Telefone / WhatsApp *</label>
-                            <input type="tel" id="telefone" name="Telefone" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="empresa">Nome da Empresa *</label>
-                            <input type="text" id="empresa" name="Empresa" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Tempo na empresa *</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="Tempo_na_Empresa" value="Menos de 1 ano" required> Menos de 1 ano</label>
-                                <label><input type="radio" name="Tempo_na_Empresa" value="1 a 3 anos"> 1 a 3 anos</label>
-                                <label><input type="radio" name="Tempo_na_Empresa" value="3 a 5 anos"> 3 a 5 anos</label>
-                                <label><input type="radio" name="Tempo_na_Empresa" value="Mais de 5 anos"> Mais de 5 anos</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-16); font-size: 1.4rem;">2. Fluxo de Materiais (Recebimento → Entrega)</h3>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--space-24); font-style: italic;">Escala: 1 = Muito fraco | 5 = Excelente</p>
-
-                        <div class="form-group">
-                            <label>O fluxo de materiais (do recebimento à entrega) é bem definido e seguido na prática? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q1_Fluxo_Definido" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q1_Fluxo_Definido" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q1_Fluxo_Definido" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q1_Fluxo_Definido" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q1_Fluxo_Definido" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>As etapas do processo (recebimento, armazenagem, separação, expedição, entrega) possuem procedimentos padronizados e documentados? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q2_Procedimentos" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q2_Procedimentos" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q2_Procedimentos" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q2_Procedimentos" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q2_Procedimentos" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>O fluxo entre as áreas (compras, vendas, logística, financeiro) ocorre de forma integrada e sem retrabalho? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q3_Integracao_Areas" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q3_Integracao_Areas" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q3_Integracao_Areas" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q3_Integracao_Areas" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q3_Integracao_Areas" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>O tempo entre o recebimento e a entrega é monitorado e otimizado? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q4_Tempo_Monitorado" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q4_Tempo_Monitorado" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q4_Tempo_Monitorado" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q4_Tempo_Monitorado" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q4_Tempo_Monitorado" value="5"> 5</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-16); font-size: 1.4rem;">3. Sistema e Controles</h3>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--space-24); font-style: italic;">Escala: 1 = Inexistente / Fraco | 5 = Completo / Eficiente</p>
-
-                        <div class="form-group">
-                            <label>O sistema utilizado (ERP, WMS, planilhas, etc.) atende plenamente às necessidades da operação logística? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q5_Sistema_Atende" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q5_Sistema_Atende" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q5_Sistema_Atende" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q5_Sistema_Atende" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q5_Sistema_Atende" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Há integração entre o sistema e outras áreas (compras, vendas, financeiro)? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q6_Integracao_Sistema" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q6_Integracao_Sistema" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q6_Integracao_Sistema" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q6_Integracao_Sistema" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q6_Integracao_Sistema" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Os controles de estoque (entradas, saídas, perdas, acuracidade) são atualizados e confiáveis? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q7_Controles_Estoque" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q7_Controles_Estoque" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q7_Controles_Estoque" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q7_Controles_Estoque" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q7_Controles_Estoque" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Existem indicadores de desempenho logístico acompanhados regularmente (ex.: acuracidade, OTIF, tempo de entrega)? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q8_Indicadores" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q8_Indicadores" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q8_Indicadores" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q8_Indicadores" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q8_Indicadores" value="5"> 5</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-16); font-size: 1.4rem;">4. Liderança e Cultura Logística</h3>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--space-24); font-style: italic;">Escala: 1 = Muito baixo | 5 = Muito alto</p>
-
-                        <div class="form-group">
-                            <label>Os líderes de logística possuem clareza sobre metas, indicadores e responsabilidades da equipe? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q9_Clareza_Lideres" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q9_Clareza_Lideres" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q9_Clareza_Lideres" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q9_Clareza_Lideres" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q9_Clareza_Lideres" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>A equipe é engajada e participa de ações de melhoria contínua? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q10_Engajamento" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q10_Engajamento" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q10_Engajamento" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q10_Engajamento" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q10_Engajamento" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Os líderes atuam de forma preventiva (planejam e antecipam problemas) e não apenas reativa? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q11_Atuacao_Preventiva" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q11_Atuacao_Preventiva" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q11_Atuacao_Preventiva" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q11_Atuacao_Preventiva" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q11_Atuacao_Preventiva" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>A cultura da empresa valoriza a logística como área estratégica (mesmo sem gerar receita direta)? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q12_Valorizacao_Logistica" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q12_Valorizacao_Logistica" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q12_Valorizacao_Logistica" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q12_Valorizacao_Logistica" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q12_Valorizacao_Logistica" value="5"> 5</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-16); font-size: 1.4rem;">5. Tecnologia e Inovação</h3>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--space-24); font-style: italic;">Escala: 1 = Inexistente / Raro | 5 = Contínuo / Estruturado</p>
-
-                        <div class="form-group">
-                            <label>A empresa realiza investimentos regulares em tecnologia ou infraestrutura logística? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q13_Investimentos" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q13_Investimentos" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q13_Investimentos" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q13_Investimentos" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q13_Investimentos" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Há utilização de ferramentas digitais para acompanhamento de indicadores e resultados? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q14_Ferramentas_Digitais" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q14_Ferramentas_Digitais" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q14_Ferramentas_Digitais" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q14_Ferramentas_Digitais" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q14_Ferramentas_Digitais" value="5"> 5</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Existe abertura para testar novas soluções (automação, sistemas, melhorias de layout, etc.)? *</label>
-                            <div class="radio-group" style="flex-direction: row; flex-wrap: wrap;">
-                                <label style="min-width: 80px;"><input type="radio" name="Q15_Abertura_Inovacao" value="1" required> 1</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q15_Abertura_Inovacao" value="2"> 2</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q15_Abertura_Inovacao" value="3"> 3</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q15_Abertura_Inovacao" value="4"> 4</label>
-                                <label style="min-width: 80px;"><input type="radio" name="Q15_Abertura_Inovacao" value="5"> 5</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(30, 144, 255, 0.1); padding: var(--space-24); border-radius: var(--radius-lg); margin-bottom: var(--space-32);">
-                        <h3 style="color: var(--color-secondary); margin-bottom: var(--space-24); font-size: 1.4rem;">6. Percepção e Sugestões</h3>
-
-                        <div class="form-group">
-                            <label for="desafios_principais">Quais são, na sua opinião, os principais desafios logísticos da empresa hoje? *</label>
-                            <textarea id="desafios_principais" name="Desafios_Principais" class="form-control" rows="4" required placeholder="Descreva os principais desafios que você identifica na operação logística..."></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="melhorias_urgentes">Quais melhorias você considera mais urgentes ou com maior impacto? *</label>
-                            <textarea id="melhorias_urgentes" name="Melhorias_Urgentes" class="form-control" rows="4" required placeholder="Liste as melhorias que você acredita terem maior prioridade..."></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="observacoes_adicionais">Deseja acrescentar alguma observação ou sugestão adicional?</label>
-                            <textarea id="observacoes_adicionais" name="Observacoes_Adicionais" class="form-control" rows="4" placeholder="Espaço livre para comentários adicionais, contextos importantes ou sugestões..."></textarea>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: var(--space-16);">
-                        Enviar e Receber Índice de Maturidade Logística (IML)
-                    </button>
-
-                    <div id="resultado" class="hidden" style="margin-top: var(--space-32); padding: var(--space-32); background: linear-gradient(135deg, rgba(30, 144, 255, 0.2) 0%, rgba(255, 51, 51, 0.2) 100%); border-radius: var(--radius-lg); border: 2px solid var(--color-primary);">
-                        <h3 style="color: var(--color-text); text-align: center; margin-bottom: var(--space-24);">Seu Índice de Maturidade Logística (IML)</h3>
-                        <div id="resultado-conteudo"></div>
-                    </div>
-                </form>
-            </div>
         </div>
     </section>
 
@@ -526,7 +250,7 @@
                     <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                     <h3>E-mail</h3>
                     <p><a href="mailto:contato@jgm4.com.br">btmuniz72@hotmail.com</a></p>
-                    <p><a href="mailto:comercial@jgm4.com.br">contato@jgm4.com.br</a></p>
+                    <p><a href="mailto:comercial@jgm4.com.br">contato@jgm4consultoria.com.br</a></p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon"><i class="fa-solid fa-address-card"></i></div>
@@ -547,6 +271,7 @@
     <footer>
         <p>&copy; 2025 JGM4 Consultoria Logística. Todos os direitos reservados.</p>
         <p>Transformando operações logísticas em vantagem competitiva há mais de 20 anos.</p>
+        <p style="margin-top: 16px; font-size: 0.9rem;"><a href="politica.html" style="color: #ff3333; text-decoration: none;">Política de Privacidade</a></p>
     </footer>
 
     <script>
