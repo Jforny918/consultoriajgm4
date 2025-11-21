@@ -172,7 +172,7 @@
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3.7rem;
             font-weight: 700;
             margin-bottom: var(--space-24);
             line-height: 1.2;
@@ -1022,9 +1022,7 @@
                 height: 40px;
             }
 
-            h1 {
-                font-size: 2rem;
-            }
+          
         }
         
         
