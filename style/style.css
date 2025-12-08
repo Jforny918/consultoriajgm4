@@ -678,6 +678,17 @@
             }
         }
 
+        /* Regra para Desktop / Geral */
+        #header nav {
+            /* Define o sistema de coordenadas para elementos filhos absolutos */
+            position: relative; 
+            display: flex; /* ou use a sua regra atual para alinhar itens */
+            justify-content: space-between;
+            align-items: center;
+}
+        .menu-toggle {
+            display: none;
+        }
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -695,9 +706,14 @@
                 box-shadow: var(--shadow-md);
                 gap: var(--space-16);
             }
-
             .nav-links.active {
                 display: flex;
+            }
+
+
+            .nav-links li {
+                text-align: center;
+                margin: 10px 0;
             }
 
             .hero {

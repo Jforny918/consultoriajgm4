@@ -16,11 +16,19 @@
 
         function closeMenu() {
             const navLinks = document.getElementById('navLinks');
-            navLinks.classList.remove('active');
+            // Verifica se está em modo móvel (ex: <= 768px) antes de fechar
+            // (A condição exata depende do seu breakpoint no CSS)
+            if (window.innerWidth <= 768) { 
+                navLinks.classList.remove('active');
+            }
         }
 
-        function submitQuiz(event) {
-            event.preventDefault();
+        // O código abaixo é essencial, pois o HTML usa onclick diretamente:
+        window.toggleMenu = toggleMenu;
+        window.closeMenu = closeMenu; 
+        // Opcionalmente, remova se usar EventListeners, mas no seu caso, é necessário.
+                function submitQuiz(event) {
+                    event.preventDefault();
             
             const formData = new FormData(event.target);
             const data = {};
@@ -213,8 +221,9 @@
 
         function closeMenu() {
             const navLinks = document.getElementById('navLinks');
-            navLinks.classList.remove('active');
+                navLinks.classList.remove('active');
         }
+    
 
         // Header scroll effect
         window.addEventListener('scroll', function() {
